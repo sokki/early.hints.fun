@@ -1,0 +1,15 @@
+# fly.toml app configuration file generated for hints-fun on 2023-07-13T10:42:51Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "hints-fun"
+primary_region = "ams"
+
+[http_service]
+  internal_port = 80
+  force_https = false
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
